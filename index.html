@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rockved 1.0</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./toast/style.css">
+</head>
+<body>
+    <ul class="notifications"></ul>
+    <div class="container">
+      <div class="forms" id="forms">
+        <form id="loginForm" autocomplete="off">
+          <h1>Login</h1>
+          <div>
+            <label for="luser">Email:</label><br>
+            <input type="email" id="luser" required><br>
+          </div>
+          <div>
+            <label for="lpass">Password:</label><br>
+            <input type="password" id="lpass" required><br>
+          </div>
+          <input type="submit" value="Submit" id="login">
+          <p>Not a user? <a style="color: azure;" href="#registerForm">Register</a></p>
+        </form>
+      <br>
+        <form id="registerForm" autocomplete="off">
+            <h1>Register</h1>
+            <div>
+                <label for="ruser">Email:</label><br>
+                <input type="email" id="ruser" required><br>
+            </div>
+            <div>
+                <label for="rpass">Password:</label><br>
+                <input type="password" id="rpass" required><br>
+            </div>
+            <input type="submit" value="Register" id="register">
+            <p>Already a user? <a style="color: azure;" href="#loginForm">Login</a></p>
+        </form>
+      </div>
+    </div>
+    <script src="https://kit.fontawesome.com/59edc03056.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.0.0/core.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.9-1/md5.js"></script>
+    <script src="./js/index.js" type="module"></script>
+</body>
+</html>
